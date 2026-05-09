@@ -25,6 +25,7 @@ public class lineartst {
         int itt = sc.nextInt();
         System.out.println("\n" + JacobiMethod.solve(A, B, X0, itt));
         System.out.println("\n" + GaussSeidelMethod.solve(A, B, X0, itt));
+        System.out.println("\n" + methods.GaussElimination.solve(A, B));
         sc.close();
     }
 }
