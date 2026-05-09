@@ -35,7 +35,7 @@ public abstract class Secant {
             
             xval[i+1] = xval[i] - (fx1 * (xval[i] - xval[i-1])) / denominator;
             
-            // Prepare fx0 for next iteration: it will be fx1 of current iteration
+
             fx0 = fx1;
 
             if (Double.isNaN(xval[i+1]) || Double.isInfinite(xval[i+1])) {
