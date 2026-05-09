@@ -32,4 +32,10 @@ public abstract class DynamicEquationParser {
         }
         return expr;
     }
+    public static Expression EBXYZ(String equation) {
+        Argument x = new Argument("x");
+        Argument y = new Argument("y");
+        Argument z = new Argument("z");
+        return new Expression(equation, x, y, z);
+    }
 }
