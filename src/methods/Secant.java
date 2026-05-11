@@ -12,16 +12,13 @@ public abstract class Secant {
         double[] xval = new double[itt];
         xval[0] = x0;
         xval[1] = x1;
-        
-        double fx0 = Double.NaN;
-        double fx1 = Double.NaN;
-
+        double fx0 = 0;
+        double fx1;
         for (int i = 1; i < itt - 1; i++) {
             if (i == 1) {
                 DynamicEquationParser.updateX(equation, xval[i - 1]);
                 fx0 = equation.calculate();
             }
-            
             DynamicEquationParser.updateX(equation, xval[i]);
             fx1 = equation.calculate();
             
@@ -32,12 +29,8 @@ public abstract class Secant {
                 }
                 break;
             }
-            
             xval[i+1] = xval[i] - (fx1 * (xval[i] - xval[i-1])) / denominator;
-            
-
             fx0 = fx1;
-
             if (Double.isNaN(xval[i+1]) || Double.isInfinite(xval[i+1])) {
                 for (int j = i + 2; j < itt; j++) {
                     xval[j] = Double.NaN;

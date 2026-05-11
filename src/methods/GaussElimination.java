@@ -13,7 +13,6 @@ public abstract class GaussElimination {
         StringBuilder result = new StringBuilder();
         result.append("=== GAUSS ELIMINATION STEPS ===\n\n");
         for (int i = 0; i < n; i++) {
-            // Safety check for division by zero
             if (Math.abs(A[i][i]) < 1e-12) {
                 return "Error: Zero pivot encountered. Matrix requires row swapping (partial pivoting) to solve.";
             }

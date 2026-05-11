@@ -14,7 +14,6 @@ public abstract class HalleyMethod {
               .append("\nDerivatives f'(x) and f''(x) = Calculated dynamically")
               .append("\nIterations = ").append(itt)
               .append("\nInitial x0 = ").append(x0).append("\n\n");
-
         for (int i = 0; i < itt; i++) {
             DynamicEquationParser.updateX(equation, x0);
             double fx = equation.calculate();
@@ -34,7 +33,6 @@ public abstract class HalleyMethod {
                   .append(String.format("%.9f", x1)).append("\n");
             x0 = x1;
         }
-
         result.append("\n").append(ConvergenceAnalyzer.analyzeSequence(x_vals, 0.00000001)); // Halley converges extremely fast, so tight tolerance
         return result.toString();
     }
