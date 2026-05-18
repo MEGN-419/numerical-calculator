@@ -1,6 +1,6 @@
 package tests;
 
-import methods.NewtonDividedDifference;
+import methods.phase3.NewtonDividedDifference;
 import java.util.Scanner;
 
 public class newtontst {

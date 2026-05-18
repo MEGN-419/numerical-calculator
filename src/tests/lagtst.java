@@ -1,6 +1,6 @@
 package tests;
 
-import methods.Lagrange;
+import methods.phase3.Lagrange;
 import java.util.Scanner;
 
 public class lagtst {

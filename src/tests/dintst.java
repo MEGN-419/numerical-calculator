@@ -1,7 +1,7 @@
 package tests;
 
 import handlers.DynamicEquationParser;
-import methods.DoubleIntegration;
+import methods.phase3.DoubleIntegration;
 import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.License;
 import java.util.Scanner;

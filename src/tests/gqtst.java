@@ -1,7 +1,7 @@
 package tests;
 
 import handlers.DynamicEquationParser;
-import methods.GaussQuadrature;
+import methods.phase3.GaussQuadrature;
 import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.License;
 import java.util.Scanner;

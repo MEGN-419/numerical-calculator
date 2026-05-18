@@ -1,6 +1,6 @@
 package tests;
 
-import methods.NumericalDifferentiation;
+import methods.phase3.NumericalDifferentiation;
 import java.util.Scanner;
 
 public class difftst {

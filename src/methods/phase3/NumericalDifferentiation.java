@@ -1,4 +1,4 @@
-package methods;
+package methods.phase3;
 
 public abstract class NumericalDifferentiation {
 

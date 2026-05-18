@@ -1,4 +1,4 @@
-package methods;
+package methods.phase3;
 
 import handlers.DynamicEquationParser;
 import org.mariuszgromada.math.mxparser.Expression;
