@@ -1,12 +1,12 @@
-package tests;
+package tests.ph3tsts;
 
 import handlers.DynamicEquationParser;
-import methods.phase3.NumericalIntegration;
+import methods.phase3.RombergIntegration;
 import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.License;
 import java.util.Scanner;
 
-public class nintst {
+public class rombergtst {
     public static void main(String[] args) {
         License.iConfirmNonCommercialUse("John Doe");
         Scanner sc = new Scanner(System.in);
@@ -17,9 +17,9 @@ public class nintst {
         double a = DynamicEquationParser.EBX(sc.next()).calculate();
         System.out.println("Enter upper bound (b): ");
         double b = DynamicEquationParser.EBX(sc.next()).calculate();
-        System.out.println("Enter number of subintervals (n - must be even for Simpson's): ");
-        int n = sc.nextInt();
-        String answer = NumericalIntegration.solve(equation, a, b, n);
+        System.out.println("Enter the number of Romberg rows to generate (e.g., 4 or 5): ");
+        int maxRows = sc.nextInt();
+        String answer = RombergIntegration.solve(equation, a, b, maxRows);
         System.out.println("\n" + answer);
         sc.close();
     }

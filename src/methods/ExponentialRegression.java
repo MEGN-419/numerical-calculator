@@ -1,4 +1,4 @@
-package methods.phase3;
+package methods;
 
 public abstract class ExponentialRegression {
 

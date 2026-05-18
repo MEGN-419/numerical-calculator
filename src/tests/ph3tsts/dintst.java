@@ -1,4 +1,4 @@
-package tests;
+package tests.ph3tsts;
 
 import handlers.DynamicEquationParser;
 import methods.phase3.DoubleIntegration;

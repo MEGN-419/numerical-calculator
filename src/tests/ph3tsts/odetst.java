@@ -1,7 +1,6 @@
-package tests;
+package tests.ph3tsts;
 
-import handlers.DynamicEquationParser;
-import methods.ODE;
+import methods.phase3.ODE;
 import org.mariuszgromada.math.mxparser.Argument;
 import org.mariuszgromada.math.mxparser.Expression;
 import org.mariuszgromada.math.mxparser.License;

@@ -1,6 +1,6 @@
 package tests;
 
-import methods.phase3.ExponentialRegression;
+import methods.ExponentialRegression;
 import java.util.Scanner;
 
 public class exprtst {

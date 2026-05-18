@@ -1,4 +1,4 @@
-package tests;
+package tests.ph3tsts;
 
 import methods.phase3.Lagrange;
 import java.util.Scanner;
